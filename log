@@ -9,3 +9,5 @@ Before I've thought that operator "=" does the same thing as copy :)
             swap.append(int(number))
     input_file = swap
 
+Day 3:
+40: tuple is a collection which is ordered and unchangeable <- hashable.
