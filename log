@@ -1,0 +1,11 @@
+Day 2:
+24: I had problem with "input_file". With debugger I've noticed it was the same object as swap which  I've used as reference. After using "copy()" everything works fine.
+Before I've thought that operator "=" does the same thing as copy :)
+    swap = []
+    with open("input", "r") as input_file:
+        input_file = input_file.read()
+        input_file = input_file.strip().split(",")
+        for number in input_file:
+            swap.append(int(number))
+    input_file = swap
+
