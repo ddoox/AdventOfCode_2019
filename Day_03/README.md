@@ -1,4 +1,4 @@
-#Day 3: Crossed Wires
+# --- Day 3: Crossed Wires ---
 
 The gravity assist was successful, and you're well on your way to the Venus refuelling station. During the rush back on Earth, the fuel management system wasn't completely installed, so that's next on the priority list.
 
@@ -8,29 +8,29 @@ The wires twist and turn, but the two wires occasionally cross paths. To fix the
 
 For example, if the first wire's path is R8,U5,L5,D3, then starting from the central port (o), it goes right 8, up 5, left 5, and finally down 3:
 
-    ...........
-    ...........
-    ...........
-    ....+----+.
-    ....|....|.
-    ....|....|.
-    ....|....|.
-    .........|.
-    .o-------+.
-    ...........
+...........
+...........
+...........
+....+----+.
+....|....|.
+....|....|.
+....|....|.
+.........|.
+.o-------+.
+...........
 
 Then, if the second wire's path is U7,R6,D4,L4, it goes up 7, right 6, down 4, and left 4:
 
-    ...........
-    .+-----+...
-    .|.....|...
-    .|..+--X-+.
-    .|..|..|.|.
-    .|.-X--+.|.
-    .|..|....|.
-    .|.......|.
-    .o-------+.
-    ...........
+...........
+.+-----+...
+.|.....|...
+.|..+--X-+.
+.|..|..|.|.
+.|.-X--+.|.
+.|..|....|.
+.|.......|.
+.o-------+.
+...........
 
 These wires cross at two locations (marked X), but the lower-left one is closer to the central port: its distance is 3 + 3 = 6.
 
@@ -44,10 +44,7 @@ Here are a few more examples:
 What is the Manhattan distance from the central port to the closest intersection?
 
 Your puzzle answer was 865.
-
-The first half of this puzzle is complete! It provides one gold star: *
-
-##Part Two
+## --- Part Two ---
 
 It turns out that this circuit is very timing-sensitive; you actually need to minimize the signal delay.
 
@@ -55,16 +52,16 @@ To do this, calculate the number of steps each wire takes to reach each intersec
 
 The number of steps a wire takes is the total number of grid squares the wire has entered to get to that location, including the intersection being considered. Again consider the example from above:
 
-    ...........
-    .+-----+...
-    .|.....|...
-    .|..+--X-+.
-    .|..|..|.|.
-    .|.-X--+.|.
-    .|..|....|.
-    .|.......|.
-    .o-------+.
-    ...........
+...........
+.+-----+...
+.|.....|...
+.|..+--X-+.
+.|..|..|.|.
+.|.-X--+.|.
+.|..|....|.
+.|.......|.
+.o-------+.
+...........
 
 In the above example, the intersection closest to the central port is reached after 8+5+5+2 = 20 steps by the first wire and 7+6+4+3 = 20 steps by the second wire for a total of 20+20 = 40 steps.
 
