@@ -7,9 +7,7 @@ for number in range(input_min, input_max + 1):
     criteria = True
     has_double = False
     first_char = True
-    second_char = False
     char_previous = "9"
-    char_penultimate = "9"
     double_number = "9"
 
     number = str(number)

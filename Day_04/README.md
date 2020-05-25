@@ -18,6 +18,7 @@ Other than the range rule, the following are true:
 How many different passwords within the range given in your puzzle input meet these criteria?
 
 Your puzzle answer was 1729.
+
 ##Part Two
 
 An Elf just remembered one more important detail: the two adjacent matching digits are not part of a larger group of matching digits.
