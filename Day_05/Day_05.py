@@ -1,5 +1,3 @@
-# input_file = [3,0,4,0,99]
-# input_file = [1002,4,3,4,33]
 swap = []
 with open("input", "r") as input_file:
     input_file = input_file.read()
@@ -8,13 +6,9 @@ with open("input", "r") as input_file:
         swap.append(int(number))
 input_file = [_ for _ in swap]
 
-# 36312386 - bad
-# 16225258 - yey
-
 input_value = 1
 result_index = 0
 opcode_index = 0
-
 
 opcode_value_str = str(input_file[opcode_index])
 opcode_value_int = int(opcode_value_str[-1])
@@ -24,10 +18,9 @@ param_C = 0
 
 while opcode_value_int in [1, 2, 3, 4]:
 
-    if opcode_index == 220:
-        print("ends here")
     if len(opcode_value_str) == 3:
         param_C = int(opcode_value_str[-3])
+        param_B = 0
     elif len(opcode_value_str) == 4:
         param_C = int(opcode_value_str[-3])
         param_B = int(opcode_value_str[-4])
@@ -63,7 +56,6 @@ while opcode_value_int in [1, 2, 3, 4]:
         output = input_file[result_index]
         print("output: " + str(output))
         print("opcode index: " + str(opcode_index) + "\n")
-
     opcode_index += 4 if opcode_value_int == 1 or opcode_value_int == 2 else 2
 
     opcode_value_str = str(input_file[opcode_index])

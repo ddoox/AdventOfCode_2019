@@ -11,3 +11,6 @@ Before I've thought that operator "=" does the same thing as copy :)
 
 Day 3:
 40: tuple is a collection which is ordered and unchangeable <- hashable.
+
+Day 5:
+Please, never again forget about reseting value back to 0... So stupid error and so much troubles with it. I'm a bit ashamed, but it's a good lesson ;)
