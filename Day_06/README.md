@@ -108,3 +108,4 @@ Afterward, the map of orbits looks like this:
 
 What is the minimum number of orbital transfers required to move from the object YOU are orbiting to the object SAN is orbiting? (Between the objects they are orbiting - not between YOU and SAN.)
 
+Your puzzle answer was 424.
