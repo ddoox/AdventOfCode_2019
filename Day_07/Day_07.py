@@ -6,11 +6,14 @@ def amplifier(phase, input_value):
     return Inetcode("../input", phase, input_value).calc()
 
 
-perms = permutations([0, 1, 2, 3, 4])
+input_value = 0
 max_output = 0
+phases = range(0, 5)
+phases_perms = permutations(phases)
 
-for test in list(perms):
-    output = amplifier(test[0], 0)
+
+for test in list(phases_perms):
+    output = amplifier(test[0], input_value)
     output = amplifier(test[1], output)
     output = amplifier(test[2], output)
     output = amplifier(test[3], output)
