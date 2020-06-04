@@ -21,7 +21,7 @@ for phases in list(phases_perms):
     amp_c = amplifier(phases[2], amp_b[0], start_index, 0)
     amp_d = amplifier(phases[3], amp_c[0], start_index, 0)
     amp_e = amplifier(phases[4], amp_d[0], start_index, 0)
-    max_output = amp_e[0]
+    output = amp_e[0]
 
     while True:
         try:
