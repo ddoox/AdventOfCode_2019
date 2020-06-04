@@ -25,20 +25,18 @@ zero_min = width * height
 zero_min_index = 0
 
 image = prepare(image_data, width, height)
+final_image = [["2" for col in range(width)] for row in range(height)]
 
-for idx, layer in enumerate(image):
-    for row in layer:
-        zero_sum += str(row).count("0")
+for layer in image:
+    for wid in range(0, height):
+        for hei in range(0, width):
+            if final_image[wid][hei] == "2":
+                final_image[wid][hei] = layer[wid][hei]
 
-    if zero_sum < zero_min:
-        zero_min = zero_sum
-        zero_min_index = idx
-    zero_sum = 0
-
-ones = 0
-twos = 0
-for row in image[zero_min_index]:
-    ones += str(row).count("1")
-    twos += str(row).count("2")
-
-print(ones * twos)
+for line in final_image:
+    for digit in line:
+        if digit == "0":
+            print(" ", end="")
+        else:
+            print(".", end="")
+    print()
