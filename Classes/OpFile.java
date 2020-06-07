@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 
 public class OpFile {
-    String path = null;
+    String path;
 
     public OpFile(String path){
         this.path = path;
